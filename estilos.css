@@ -1,0 +1,366 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header, footer {
+    background-color: #005baa;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.block {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.block h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.promocion{
+    
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        background: #f9f9f9;
+        margin-top: 10px;
+    
+}
+
+/* Estilos para la lista de redes sociales */
+.contacto-item ul {
+  list-style: none;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center; 
+  gap: 15px; 
+}
+
+.contacto-item li {
+  display: inline-block;
+  text-align: center; 
+}
+
+.contacto-itemli a {
+  text-decoration: none; 
+  color: #0056a3; 
+  font-size: 16px; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px;
+  transition: color 0.3s ease; 
+}
+
+.contacto-item li a:hover {
+  color: #0078d7; 
+}
+
+.contacto-item li img {
+  border-radius: 50%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  width: 80px;
+}
+
+.contacto-item li img:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+.mail{
+    color: black;
+}
+
+
+
+/*catalogo*/
+
+/* Estilos específicos para la página Catálogo */
+#catalogo {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+#catalogo header h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Estilos para la navegación */
+#catalogo nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#catalogo nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#catalogo nav a:hover {
+  color: #0056a3;
+}
+
+/* Estilos para las secciones */
+#catalogo section {
+  margin: 40px 0;
+}
+
+#catalogo section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0078d7;
+  padding-bottom: 5px;
+}
+
+/* Estilos para los productos */
+#catalogo .producto {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  border: 1px solid #dcdcdc;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#catalogo .producto img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#catalogo .producto p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+#catalogo .producto a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #0078d7;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#catalogo .producto a:hover {
+  background-color: #0056a3;
+}
+
+/* Estilos para el pie de página */
+#catalogo footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+#catalogo footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/*mi cuenta*/
+
+/* Estilos específicos para la página Mi Cuenta */
+#mi-cuenta {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+#mi-cuenta header {
+  background-color: #003d73;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#mi-cuenta header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Navegación */
+#mi-cuenta nav {
+  display: flex;
+  justify-content: center;
+  background-color: #0056a3;
+  padding: 10px 0;
+}
+
+#mi-cuenta nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#mi-cuenta nav a:hover {
+  background-color: #003d73;
+}
+
+/* Contenido principal */
+#mi-cuenta main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de perfil */
+#mi-cuenta .perfil {
+  text-align: center;
+}
+
+#mi-cuenta .perfil img.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 15px 0;
+}
+
+#mi-cuenta .perfil p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+#mi-cuenta .perfil .btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #0056a3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#mi-cuenta .perfil .btn:hover {
+  background-color: #003d73;
+}
+
+/* Sección de opciones */
+#mi-cuenta .opciones-cuenta ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#mi-cuenta .opciones-cuenta li {
+  margin: 10px 0;
+}
+
+#mi-cuenta .opciones-cuenta a {
+  text-decoration: none;
+  color: #0056a3;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+#mi-cuenta .opciones-cuenta a:hover {
+  color: #003d73;
+}
+
+/* Pie de página */
+#mi-cuenta footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #003d73;
+  color: white;
+  margin-top: 20px;
+}
