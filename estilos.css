@@ -107,6 +107,10 @@ a{
     
 }
 
+
+
+
+
 /* Estilos para la lista de redes sociales */
 .contacto-item ul {
   list-style: none;
@@ -152,40 +156,9 @@ a{
 
 
 
+
+
 /*catalogo*/
-
-/* Estilos específicos para la página Catálogo */
-#catalogo {
-  font-family: Arial, sans-serif;
-}
-
-/* Estilos para el encabezado */
-#catalogo header h1 {
-  text-align: center;
-  font-size: 28px;
-  margin-top: 20px;
-}
-
-/* Estilos para la navegación */
-#catalogo nav {
-  text-align: center;
-  margin: 20px 0;
-}
-
-#catalogo nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#catalogo nav a:hover {
-  color: #0056a3;
-}
-
-/* Estilos para las secciones */
-#catalogo section {
-  margin: 40px 0;
-}
 
 #catalogo section h2 {
   text-align: center;
@@ -194,8 +167,6 @@ a{
   border-bottom: 2px solid #0078d7;
   padding-bottom: 5px;
 }
-
-/* Estilos para los productos */
 #catalogo .producto {
   display: inline-block;
   text-align: center;
@@ -233,7 +204,6 @@ a{
   background-color: #0056a3;
 }
 
-/* Estilos para el pie de página */
 #catalogo footer {
   text-align: center;
   padding: 20px 0;
@@ -246,9 +216,16 @@ a{
   font-size: 14px;
 }
 
+
+
+
+
+
+
+
 /*mi cuenta*/
 
-/* Estilos específicos para la página Mi Cuenta */
+
 #mi-cuenta {
   font-family: 'Arial', sans-serif;
   background-color: #f5f5f5;
@@ -257,7 +234,7 @@ a{
   padding: 0;
 }
 
-/* Encabezado */
+
 #mi-cuenta header {
   background-color: #003d73;
   color: white;
@@ -271,7 +248,6 @@ a{
   font-weight: bold;
 }
 
-/* Navegación */
 #mi-cuenta nav {
   display: flex;
   justify-content: center;
@@ -293,7 +269,7 @@ a{
   background-color: #003d73;
 }
 
-/* Contenido principal */
+
 #mi-cuenta main {
   max-width: 800px;
   margin: 20px auto;
@@ -303,7 +279,7 @@ a{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Sección de perfil */
+
 #mi-cuenta .perfil {
   text-align: center;
 }
@@ -334,7 +310,7 @@ a{
   background-color: #003d73;
 }
 
-/* Sección de opciones */
+
 #mi-cuenta .opciones-cuenta ul {
   list-style: none;
   padding: 0;
@@ -356,7 +332,7 @@ a{
   color: #003d73;
 }
 
-/* Pie de página */
+
 #mi-cuenta footer {
   text-align: center;
   padding: 20px 0;
@@ -364,3 +340,30 @@ a{
   color: white;
   margin-top: 20px;
 }
+
+
+
+
+
+
+
+
+/**/
+.login-icon {
+  text-decoration: none;
+  width: 100px;
+  height: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-icon:hover {
+  background-color: white;
+  color: #003d73;
+}
+
