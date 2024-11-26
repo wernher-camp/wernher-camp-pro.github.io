@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facturación</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body id="fact">
+  <div id="facturacion-container">
+    <header id="facturacion-header">
+      <h1>Facturación</h1>
+      <p>Por favor, ingresa los datos para generar tu factura</p>
+    </header>
+
+    <form id="facturacion-form">
+      <fieldset>
+        <legend>Datos Fiscales</legend>
+        <label for="rfc">RFC:</label>
+        <input type="text" id="rfc" name="rfc" required placeholder="Ingresa tu RFC">
+
+        <label for="razon-social">Razón Social:</label>
+        <input type="text" id="razon-social" name="razon-social" required placeholder="Ingresa tu Razón Social">
+
+        <label for="direccion">Dirección Fiscal:</label>
+        <input type="text" id="direccion" name="direccion" required placeholder="Ingresa tu Dirección Fiscal">
+      </fieldset>
+
+      <fieldset>
+        <legend>Detalles de Compra</legend>
+        <label for="folio">Folio de Compra:</label>
+        <input type="text" id="folio" name="folio" required placeholder="Ingresa el Folio de Compra">
+
+        <label for="monto">Monto Total:</label>
+        <input type="number" id="monto" name="monto" required placeholder="Ingresa el monto total" step="0.01">
+      </fieldset>
+
+      <button type="submit" id="generar-factura-btn">Generar Factura</button>
+    </form>
+
+    <div id="factura-generada" class="hidden">
+      <h2>Factura Generada</h2>
+      <p id="factura-detalle"></p>
+      <button id="descargar-factura-btn">Descargar Factura</button>
+    </div>
+  </div>
+
+  <script >
+    document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("facturacion-form");
+  const facturaGenerada = document.getElementById("factura-generada");
+  const facturaDetalle = document.getElementById("factura-detalle");
+  const descargarFacturaBtn = document.getElementById("descargar-factura-btn");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const rfc = document.getElementById("rfc").value;
+    const razonSocial = document.getElementById("razon-social").value;
+    const direccion = document.getElementById("direccion").value;
+    const folio = document.getElementById("folio").value;
+    const monto = document.getElementById("monto").value;
+
+    // Generar los detalles de la factura
+    facturaDetalle.innerHTML = `
+      <strong>RFC:</strong> ${rfc}<br>
+      <strong>Razón Social:</strong> ${razonSocial}<br>
+      <strong>Dirección:</strong> ${direccion}<br>
+      <strong>Folio de Compra:</strong> ${folio}<br>
+      <strong>Monto Total:</strong> $${parseFloat(monto).toFixed(2)}
+    `;
+
+    // Mostrar el contenedor de factura generada
+    facturaGenerada.classList.remove("hidden");
+  });
+
+  // Simular la descarga de la factura
+  descargarFacturaBtn.addEventListener("click", () => {
+    alert("La factura ha sido descargada.");
+  });
+});
+  </script>
+</body>
+</html>
