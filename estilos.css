@@ -350,12 +350,14 @@ a{
 
 /**/
 .login-icon {
+  margin-left: 20px;
   text-decoration: none;
   width: 100px;
   height: 10px;
   font-size: 16px;
   display: flex;
   align-items: center;
+  position: absolute;
   padding: 8px 12px;
   border: 1px solid white;
   border-radius: 5px;
