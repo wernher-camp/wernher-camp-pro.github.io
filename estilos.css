@@ -980,3 +980,50 @@ input[type="text"], input[type="email"], select, textarea {
 textarea {
   resize: none;
 }
+
+
+
+
+
+#opiniones-clientes {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#opiniones-clientes h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.opinion {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.opinion:last-child {
+  border-bottom: none;
+}
+
+.cliente {
+  font-size: 16px;
+  font-weight: bold;
+  color: #075E54;
+}
+
+.rating span {
+  font-size: 18px;
+  color: #f39c12; /* Color de estrellas doradas */
+}
+
+.comentario {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  line-height: 1.5;
+}
