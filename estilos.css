@@ -242,6 +242,7 @@ button.agregar-carrito:hover {
   padding-bottom: 5px;
 }
 #catalogo .producto {
+  height: 650PX;
   display: inline-block;
   text-align: center;
   margin: 20px;
