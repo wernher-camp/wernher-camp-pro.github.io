@@ -23,6 +23,7 @@ body {
     margin: 0 12px;
     text-decoration: none;
     font-weight: bold;
+
   }
   
 
@@ -34,7 +35,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #000000;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -87,7 +88,7 @@ main {
 }
 
 footer {
-    background: #333;
+    background: #000000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -277,16 +278,17 @@ button.agregar-carrito:hover {
   background-color: #0056a3;
 }
 
-#catalogo footer {
+#pie-catalogo {
   text-align: center;
   padding: 20px 0;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-#catalogo footer p {
+#pie-catalogo p {
   margin: 0;
   font-size: 14px;
+
 }
 
 
@@ -685,11 +687,11 @@ input {
 /*CARRITO*/
 
 #cabez {
-  background-color: #333;
+  background-color: #000000;
   color: white;
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -804,3 +806,5 @@ input {
   height: 200px;
   object-fit: cover;
 }
+
+
