@@ -8,15 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 
-  <script>
-    // Agregar evento a las estrellas
-    document.querySelectorAll('.rating input').forEach(radio => {
-        radio.addEventListener('change', event => {
-            const rating = event.target.value; // Valor de la estrella seleccionada
-            console.log(`Calificación seleccionada: ${rating}`);
-        });
-    });
-</script>
+
 
 
 </head>
@@ -331,5 +323,16 @@
     </section>
     <p>© 2024 Pinturas Doal Colotlán. Todos los derechos reservados.</p>
   </footer>
+
+
+  <script>
+    document.querySelectorAll('.rating input').forEach(radio => {
+        radio.addEventListener('change', event => {
+            const rating = event.target.value; // Valor de la estrella seleccionada
+            console.log(`Calificación seleccionada: ${rating}`);
+        });
+    });
+</script>
+
 </body>
 </html>
