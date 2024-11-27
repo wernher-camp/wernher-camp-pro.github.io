@@ -242,7 +242,7 @@ button.agregar-carrito:hover {
   padding-bottom: 5px;
 }
 #catalogo .producto {
-  height: 650PX;
+  height: 750PX;
   display: inline-block;
   text-align: center;
   margin: 20px;
@@ -881,3 +881,31 @@ input {
 }
 /*=======
 >>>>>>> 875eb9c34b8b4ef7dcc07f170391ab3a0a464384*/
+
+
+
+
+
+
+/* Contenedor de las estrellas */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rating input {
+  display: none; 
+}
+
+.rating label {
+  font-size: 20px;
+  color: #ccc; 
+  padding: 0 5px;
+}
+
+.rating input:checked ~ label,
+.rating input:hover ~ label {
+  color: #f39c12; 
+}

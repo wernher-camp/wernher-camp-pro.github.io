@@ -6,6 +6,19 @@
   <title>Catálogo - Pinturas Doal Colotlán</title>
   <link rel="stylesheet" href="estilos.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+  <script>
+    // Agregar evento a las estrellas
+    document.querySelectorAll('.rating input').forEach(radio => {
+        radio.addEventListener('change', event => {
+            const rating = event.target.value; // Valor de la estrella seleccionada
+            console.log(`Calificación seleccionada: ${rating}`);
+        });
+    });
+</script>
+
+
 </head>
 <body id="catalogo">
   <header>
@@ -37,13 +50,33 @@
         <p>Pintura muy económica hecha con Resina Vinil-Acrílica de acabado mate de muy baja lavabilidad. 
           Formulada Libre de Metales Pesados, se recomienda su uso solo para interiores.</p>
         <a href="detalle_producto.html?producto=vinilica1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+
+
       <div class="producto">
         <img src="https://plaforama.com/monterrey/1714/pintura-vinilica-doal-gran-turismo-17-anos-semigloss-blanco-satinado-interior-exterior-19.jpg" alt="Pintura Vinílica 2" width="150">
         <p>Pintura Vinílica 2 - $200.00</p>
         <a href="detalle_producto.html?producto=vinilica2">Ver más</a>
-      </div>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>      
+    </div>
     </section>
+
+
+
 
     <section>
       <h2>Esmaltes</h2>
@@ -53,13 +86,35 @@
         <p>Esmalte alquidálico estirenado de secado y endurecimiento ultra rápido, 
           buen brillo, excelente cubriente y adecuado contenido de resina.</p>
         <a href="detalle_producto.html?producto=esmalte1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+      </div>     
+    </div>
       </div>
+
+
+
       <div class="producto">
         <img src="https://pinturasdoal.com/wp-content/uploads/2005000-HQ.jpg" alt="Pintura Esmalte 2" width="150">
         <p>Pintura Esmalte 2 - $220.00</p>
         <a href="detalle_producto.html?producto=esmalte2">Ver más</a>
-      </div>
+
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+          </div>
     </section>
+
+
+
 
     <section>
       <h2>Arquitectónica</h2>
@@ -67,8 +122,14 @@
         <img src="https://pinturasdoal.com/wp-content/uploads/2027020-HQ.jpg" alt="Pintura Arquitectónica 1" width="150">
         <p>Pintura Arquitectónica 1 - $250.00</p>
         <a href="detalle_producto.html?producto=arquitectonica1">Ver más</a>
-      </div>
-
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+  </div>
     </section>
 
 
@@ -79,8 +140,17 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOAh1gzdbmO-XlsVT6xeog7M9W28h-y0RzA&s" alt="Pintura Automotriz 1" width="150">
         <p>Pintura Automotriz 1 - $280.00</p>
         <a href="detalle_producto.html?producto=automotriz1">Ver más</a>
-      </div>
+   
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+       </div>
     </section>
+
 
     <section>
       <h2>Impermeabilizantes</h2>
@@ -88,8 +158,17 @@
         <img src="https://pinturasdoal.com/wp-content/uploads/7001001.jpg" alt="Impermeabilizante 1" width="150">
         <p>Impermeabilizante 1 - $350.00</p>
         <a href="detalle_producto.html?producto=impermeabilizante1">Ver más</a>
-      </div>
+    
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+    </div>
+  </div>
     </section>
+
 
     <section>
       <h2>Accesorios</h2>
@@ -100,57 +179,136 @@
             necesidad de clavos o tornillos. Este adhesivo es ideal para 
             trabajos de bricolaje y reparaciones en el hogar.</p>
         <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+
       <div class="producto">
         <img src="imagenes/aeorsol color.jpeg" alt="Accesorio 1" width="150">
         <p>Aerosol Ultra Color 350 ml - $70.00</p>
         <p>La pintura Ultra Color es de fácil aplicación y es apta para superficies de madera, 
           metal, yeso, plástico rígido, porcelana, entre otros.</p>
          <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+         <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+      
       <div class="producto">
         <img src="imagenes/aerosol acero.jpeg" alt="Accesorio 1" width="150">
         <p>Esmalte Aerosol 400 ml - $65.00</p>
         <p>Fácil aplicación y secado rápido.Libres de plomo. Máxima cobertura. Anti-corrosión</p>
         <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+
       <div class="producto">
         <img src="imagenes/brocha1.jpeg" alt="Accesorio 1" width="150">
         <p>Brocha Truper 1" - $21.00</p>
         <p>Brocha con mango de madera de 1" con cerdas 100% naturales, distribuye la pintura uniformemente 
            y deja un acabado suave.</p>
         <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+
       <div class="producto">
         <img src="imagenes/brocha2.jpeg" alt="Accesorio 1" width="150">
         <p>Brocha Truper 2" - $38.00</p>
         <p>Brocha con mango de madera de 1" con cerdas 100% naturales, distribuye la pintura uniformemente 
           y deja un acabado suave.</p>
         <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+
       <div class="producto">
         <img src="imagenes/brocha t2.jpeg" alt="Accesorio 1" width="150">
         <p>Rodillo Profesional - $50.00</p>
         <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+
       <div class="producto">
         <img src="imagenes/brocha t3.jpeg" alt="Accesorio 1" width="150">
         <p>Rodillo Profesional - $50.00</p>
         <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+
       <div class="producto">
         <img src="imagenes/candado.jpeg" alt="Accesorio 1" width="150">
         <p>Candado Hermex - $285.00</p>
         <p>Candado redondo de 65 mm con gancho corto y llave de puntos en blíster.Cuerpo de acero con acabado 
           cromo-mate, gancho de acero cromado Cilindro de latón sólido con 5 pernos de combinación.</p>
         <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
       </div>
+      </div>
+
+
       <div class="producto">
         <img src="imagenes/cinta a.jpeg" alt="Accesorio 1" width="150">
         <p>Cinta teflon - $18.00</p>
         <p>Cinta sella roscas.Ideales para sellar roscas de cobre, latón, acero galvanizado, acero inoxidable,
           aluminio, PPR, CPVC, PVC, ABS y plásticos en general</p>
         <a href="detalle_producto.html?producto=accesorio1">Ver más</a>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+      </div>
       </div>
     </section>
   </main>
